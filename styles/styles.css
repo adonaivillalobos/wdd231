@@ -23,3 +23,6 @@ header {
     grid-template-columns: 150px auto;
     align-self: center;
 }
+header img {
+    align-items: right;
+}
