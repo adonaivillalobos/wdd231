@@ -16,7 +16,7 @@ nav a :hover {
     color: #1A4BA1;
 }
 header {
-    display: grid;
+    display: flex;
     background-color: #858585;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
