@@ -17,21 +17,24 @@ header {
 
 .header-container {
     display: flex;
-    flex-direction: column; /* Stack image, name, and nav vertically */
-    align-items: center; /* Center-align content */
+    flex-direction: row; /* Display image and name side by side */
+    align-items: center; /* Center-align content vertically */
 }
 
 .profile-img {
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    margin-bottom: 10px;
+    width: 150px; /* Increased width to make the picture larger */
+    height: 150px; /* Increased height to make the picture larger */
+    margin-right: 20px; /* Add some space between the image and the name */
+}
+
+.name-title {
+    margin-right: 20px; /* Add some space between the name and the nav */
 }
 
 .name-title h1 {
     font-weight: normal;
     margin: 0;
-    margin-bottom: 10px;
 }
 
 nav {
