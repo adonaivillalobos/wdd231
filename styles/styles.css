@@ -45,6 +45,7 @@ header {
 
 nav {
     margin-top: 10px; /* Add some space between name and nav */
+    background-color: #858585; /* Add background color to nav ul */
 }
 
 nav ul {
@@ -55,7 +56,7 @@ nav ul {
     flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
     justify-content: center; /* Center-align the list items */
     gap: 10px; /* Add space between list items */
-    background-color: #858585; /* Add background color to nav ul */
+    
 }
 
 nav ul li {
