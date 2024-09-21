@@ -13,13 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 
-    <link href="https://coolors.co/1a4ba1-000000-ffffff-858585-b70d01" rel="stylesheet">
+    <link rel="preload" href="https://coolors.co/1a4ba1-000000-ffffff-858585-b70d01" as="style">
 </head>
 
 <body>
     <header>
         <div class="header-container">
-            <img src="images/ado_id_.jpeg" alt="Adonai" class="profile-img">
+            <img src="images/ado_id_.jpeg" alt="Adonai" class="profile-img" width="100" height="100">
             <div class="name-title">
                 <h1>Adonai Villalobos Riveiro</h1>
             </div>
@@ -59,18 +59,18 @@
 
         <section class="location">
             <h2>Maracaibo, Venezuela</h2>
-            <img src="images/bridge_mcbo.jpg" alt="Maracaibo's Bridge">
+            <img src="images/bridge_mcbo.jpg" alt="Maracaibo's Bridge" width="300" height="200">
         </section>
     </main>
 
     <section class="certificates">
         <h2>Software Development Bachelor's</h2>
         <div class="certificate-grid">
-            <button class="cert-btn">CSE 110</button>
-            <button class="cert-btn">WDD 130</button>
-            <button class="cert-btn">CSE 210</button>
-            <button class="cert-btn">WDD 131</button>
-            <button class="cert-btn">WDD 231</button>
+            <button class="cert-btn" type="button">CSE 110</button>
+            <button class="cert-btn" type="button">WDD 130</button>
+            <button class="cert-btn" type="button">CSE 210</button>
+            <button class="cert-btn" type="button">WDD 131</button>
+            <button class="cert-btn" type="button">WDD 231</button>
         </div>
     </section>
 
@@ -79,11 +79,11 @@
         <p id="lastModified"></p>
     </footer>
 
-    <script>
+    <script type="text/javascript">
         // Script for current year and last modified date
         document.getElementById("currentyear").textContent = new Date().getFullYear();
         document.getElementById("lastModified").textContent = "Last Updated: " + document.lastModified;
     </script>
-    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
