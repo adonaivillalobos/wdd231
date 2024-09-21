@@ -21,21 +21,11 @@ header {
     align-items: center; /* Center-align content */
 }
 
-.profile-info {
-    display: flex; /* Display image and name side by side */
-    justify-content: center; /* Center-align image and name horizontally */
-    margin-bottom: 10px; /* Add some space between profile info and nav */
-}
-
 .profile-img {
     border-radius: 50%;
     width: 150px; /* Increased width to make the picture larger */
     height: 150px; /* Increased height to make the picture larger */
     margin-right: 20px; /* Add some space between the image and the name */
-}
-
-.name-title {
-    margin: 0; /* Remove margin to keep name centered */
 }
 
 .name-title h1 {
@@ -57,10 +47,6 @@ nav ul {
     gap: 10px; /* Add space between list items */
 }
 
-nav ul li {
-    margin-right: 10px; /* Add some space between list items */
-}
-
 nav ul li a {
     color: #ffffff; /* White */
     text-decoration: none;
@@ -74,10 +60,64 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Hamburger menu styles */
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.nav-toggle-label span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Media query for small screens (show hamburger menu) */
+@media (max-width: 768px) {
+    .nav-toggle-label {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* Hide the navigation menu initially */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #1a4ba1;
+        padding: 10px;
+    }
+
+    /* Show the navigation menu when the checkbox is checked */
+    #nav-toggle:checked + nav ul {
+        display: flex;
+    }
+}
+
+/* For larger screens (desktop) */
+@media (min-width: 769px) {
+    nav ul {
+        display: flex;
+    }
+
+    /* Hide the hamburger icon on large screens */
+    .nav-toggle-label {
+        display: none;
+    }
+}
+
 /* Main container layout */
 main {
     display: flex;
-    justify-content: space-between; /* Space between the two sections */
+    justify-content: space-between;
     padding: 20px;
     gap: 20px; /* Gap between Course Work and Maracaibo sections */
     background-color: #ffffff; /* White */
@@ -116,7 +156,7 @@ main {
     margin: 0 auto; /* Centers the image */
 }
 
-/* Certificates Section (Below Course and Maracaibo) */
+/* Certificates Section */
 .certificates {
     margin-top: 20px;
     margin-bottom: 40px; /* Increased bottom margin to create more space from the footer */
