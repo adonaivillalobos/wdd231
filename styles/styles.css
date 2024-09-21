@@ -55,7 +55,6 @@ nav ul {
     flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
     justify-content: center; /* Center-align the list items */
     gap: 10px; /* Add space between list items */
-    
 }
 
 nav ul li {
