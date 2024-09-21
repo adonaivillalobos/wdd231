@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adonai D. Villalobos Riveiro</title>
-    <meta name="description" content="WDD 231 - Web Fronted Development I">
+    <title>Adonai D. Villalobos Riveiro </title>
+    <meta name="description" content="WDD 231 - Web Fronted Developement I">
     <meta name="author" content="Adonai D. Villalobos Riveiro">
     <link rel="stylesheet" href="styles/styles.css">
 
@@ -14,69 +13,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 
     <link href="https://coolors.co/1a4ba1-000000-ffffff-858585-b70d01" rel="stylesheet">
-</head>
 
+</head>
 <body>
     <header>
-        <div class="header-container">
-            <img src="images/ado_id_.jpeg" alt="Adonai" class="profile-img">
-            <div class="name-title">
-                <h1>Adonai Villalobos Riveiro</h1>
-            </div>
-        </div>
+        <h1>Adonai Villalobos Riveiro</h1>
+        <img src="images/ado_id_.jpeg" alt="Adonai">
         <nav>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul>
-                <li><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="chamber.html" target="_blank">Chamber</a></li>
-                <li><a href="github.html" target="_blank">GitHub Profile</a></li>
-                <li><a href="contactme.html" target="_blank">LinkedIn</a></li>
-            </ul>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="chamber.html" target="_blank">Chamber</a>
+            <a href="github.html" target="_blank">GitHub Profile</a>
+            <a href="contactme.html" target="_blank">LinkedIn</a>
         </nav>
     </header>
-
     <main>
-        <section class="course-work">
-            <h2>Course Work</h2>
-            <ul>
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
-            </ul>
-        </section>
+        <div class="course-work">
+            <section class="course-work1">
 
-        <section class="location">
-            <h2>Maracaibo, Venezuela</h2>
-            <img src="images/bridge_mcbo.jpg" alt="Maracaibo's Bridge">
-        </section>
-    </main>
-
-    <!-- Certificates Section remains below the two-column layout -->
-    <section class="certificates">
-        <h2>Software Development Bachelor's</h2>
-        <div class="certificate-grid">
-            <button class="cert-btn">CSE 110</button>
-            <button class="cert-btn">WDD 130</button>
-            <button class="cert-btn">CSE 210</button>
-            <button class="cert-btn">WDD 131</button>
-            <button class="cert-btn">WDD 231</button>
+            </section>
         </div>
-    </section>
-
+        <div class="maracaibo">
+            <section class="maracaibo1">
+                <h2>Maracaibo, Venezuela</h2>
+                <img src="images/bridge_mcbo.jpg" alt="Maracaibo's Bridge">
+            </section>
+        </div>
+        <div class="certificates">
+            <section class="certificates">
+                <h2>Software Development Bachelor's</h2>
+            </section>
+        </div>
+    </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> Adonai Villalobos Riveiro | Berlin, Germany.</p>
         <p id="lastModified"></p>
     </footer>
-
-    <script>
-        // Script for current year and last modified date
-        document.getElementById("currentyear").textContent = new Date().getFullYear();
-        document.getElementById("lastModified").textContent = "Last Updated: " + document.lastModified;
-    </script>
 </body>
 </html>
