@@ -61,30 +61,30 @@ nav ul li a:hover {
 }
 
 /* Hamburger menu styles */
-.nav-toggle {
+.hamburger-container {
     display: none;
 }
 
-.nav-toggle-label {
-    display: none;
+.hamburger {
+    display: flex;
     flex-direction: column;
-    cursor: pointer;
     gap: 5px;
+    cursor: pointer;
 }
 
-.nav-toggle-label span {
+.hamburger span {
     display: block;
     width: 25px;
     height: 3px;
     background-color: white;
+    transition: 0.3s ease;
 }
 
 /* Media query for small screens (show hamburger menu) */
 @media (max-width: 768px) {
-    .nav-toggle-label {
+    .hamburger-container {
         display: flex;
         justify-content: center;
-        margin-top: 10px;
     }
 
     /* Hide the navigation menu initially */
@@ -97,7 +97,7 @@ nav ul li a:hover {
     }
 
     /* Show the navigation menu when the checkbox is checked */
-    #nav-toggle:checked + nav ul {
+    #nav-toggle:checked ~ nav ul {
         display: flex;
     }
 }
@@ -109,7 +109,7 @@ nav ul li a:hover {
     }
 
     /* Hide the hamburger icon on large screens */
-    .nav-toggle-label {
+    .hamburger-container {
         display: none;
     }
 }
