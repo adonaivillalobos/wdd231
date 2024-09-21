@@ -73,9 +73,12 @@ main {
 
 /* Location Section */
 .location img {
-    width: 100%;
+    width: 50%; /* Adjusted size to 50% of the container */
+    max-width: 400px; /* Maximum width for large screens */
     border-radius: 8px;
-    border: 2px solid #858585; /* Gray */
+    border: 2px solid #858585; /* Gray border */
+    display: block;
+    margin: 0 auto; /* Centers the image */
 }
 
 /* Certificates Section */
