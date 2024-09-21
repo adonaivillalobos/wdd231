@@ -62,7 +62,7 @@ nav ul li a:hover {
 
 /* Hamburger menu styles */
 .hamburger-container {
-    display: none;
+    display: inline-block; /* Added this to show the hamburger menu */
 }
 
 .hamburger {
@@ -78,6 +78,23 @@ nav ul li a:hover {
     height: 3px;
     background-color: white;
     transition: 0.3s ease;
+}
+
+.nav-toggle-label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle:checked ~ nav {
+    display: block; /* Show the navigation menu when the checkbox is checked */
+}
+
+nav {
+    display: none; /* Hide the navigation menu by default */
 }
 
 /* Media query for small screens (show hamburger menu) */
