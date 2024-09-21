@@ -12,39 +12,50 @@ header {
     background-color: #1a4ba1; /* Dark Blue */
     color: #ffffff; /* White */
     padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .header-container {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Stack image and name vertically */
+    align-items: center; /* Center-align content */
 }
 
 .profile-img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
 }
 
 .name-title h1 {
     font-weight: normal;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
+/* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px;
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Adds space between links */
+    align-items: center;
 }
 
 nav ul li a {
     color: #ffffff; /* White */
     text-decoration: none;
     font-size: 1.2em;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+}
+
+nav ul li a:hover {
+    border: 1px solid #ffffff; /* Add border on hover */
+    border-radius: 5px;
 }
 
 /* Main container layout */
