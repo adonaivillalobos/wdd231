@@ -17,8 +17,14 @@ header {
 
 .header-container {
     display: flex;
-    flex-direction: row; /* Display image and name side by side */
-    align-items: center; /* Center-align content vertically */
+    flex-direction: column; /* Stack image, name, and nav vertically */
+    align-items: center; /* Center-align content */
+}
+
+.profile-info {
+    display: flex; /* Display image and name side by side */
+    justify-content: center; /* Center-align image and name horizontally */
+    margin-bottom: 10px; /* Add some space between profile info and nav */
 }
 
 .profile-img {
@@ -29,7 +35,7 @@ header {
 }
 
 .name-title {
-    margin-right: 20px; /* Add some space between the name and the nav */
+    margin: 0; /* Remove margin to keep name centered */
 }
 
 .name-title h1 {
@@ -67,6 +73,7 @@ nav ul li a:hover {
     border: 1px solid #ffffff; /* Add border on hover */
     border-radius: 5px;
 }
+
 /* Main container layout */
 main {
     display: flex;
