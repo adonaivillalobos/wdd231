@@ -1,13 +1,16 @@
+/* Global styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #ffffff; /* White */
     margin: 0;
     padding: 0;
+    color: #000000; /* Black */
 }
 
+/* Header */
 header {
-    background-color: #1a4ba1;
-    color: white;
+    background-color: #1a4ba1; /* Dark Blue */
+    color: #ffffff; /* White */
     padding: 20px;
     display: flex;
     align-items: center;
@@ -39,35 +42,43 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff; /* White */
     text-decoration: none;
     font-size: 1.2em;
 }
 
+/* Main */
 main {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
     padding: 20px;
-    background-color: white;
-    margin: 20px;
-    border-radius: 8px;
+    background-color: #ffffff; /* White */
 }
 
 .course-work, .location, .certificates {
-    flex: 1;
-    margin: 10px;
+    background-color: #f0f0f0; /* Light Gray for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #858585; /* Gray */
+    margin-bottom: 20px;
 }
 
+/* Course Work Section */
 .course-work ul {
     list-style-type: disc;
     margin-left: 20px;
+    color: #000000; /* Black */
 }
 
+/* Location Section */
 .location img {
     width: 100%;
     border-radius: 8px;
+    border: 2px solid #858585; /* Gray */
 }
 
+/* Certificates Section */
 .certificates {
     text-align: center;
 }
@@ -80,8 +91,8 @@ main {
 }
 
 .cert-btn {
-    background-color: #b70d01;
-    color: white;
+    background-color: #b70d01; /* Red */
+    color: #ffffff; /* White */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -89,10 +100,14 @@ main {
     cursor: pointer;
 }
 
+.cert-btn:hover {
+    background-color: #000000; /* Black */
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1a4ba1;
-    color: white;
+    background-color: #1a4ba1; /* Dark Blue */
+    color: #ffffff; /* White */
 }
-
