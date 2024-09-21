@@ -103,7 +103,7 @@ nav ul li a:hover {
 
     /* Add styles for the navigation menu items when the menu is visible */
     .show li {
-        display: inline-block;
+        display: block;
     }
 
     /* Add styles for the navigation menu items when the menu is hidden */
@@ -204,4 +204,13 @@ footer {
     padding: 20px;
     background-color: #1a4ba1; /* Dark Blue */
     color: #ffffff; /* White */
+}
+
+/* Added styles for show and hide classes */
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
 }
