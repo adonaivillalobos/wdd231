@@ -55,7 +55,7 @@ nav ul {
     flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
     justify-content: center; /* Center-align the list items */
     gap: 10px; /* Add space between list items */
-    display: none; /* Hide the navigation menu by default */
+    
 }
 
 nav ul li {
@@ -73,52 +73,6 @@ nav ul li a {
 nav ul li a:hover {
     border: 1px solid #ffffff; /* Add border on hover */
     border-radius: 5px;
-}
-
-.nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    display: block;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    cursor: pointer;
-    position: relative;
-}
-
-.nav-toggle-label span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #ffffff;
-    margin-bottom: 5px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.nav-toggle-label span:first-child {
-    transform: translateY(-10px);
-}
-
-.nav-toggle-label span:last-child {
-    transform: translateY(10px);
-}
-
-.nav-toggle:checked ~ ul {
-    display: block;
-}
-
-.nav-toggle:checked ~ .nav-toggle-label span {
-    background-color: #000000;
-}
-
-.nav-toggle:checked ~ .nav-toggle-label span:first-child {
-    transform: translateY(0px);
-}
-
-.nav-toggle:checked ~ .nav-toggle-label span:last-child {
-    transform: translateY(0px);
 }
 
 /* Main container layout */
@@ -201,14 +155,4 @@ footer {
     padding: 20px;
     background-color: #1a4ba1; /* Dark Blue */
     color: #ffffff; /* White */
-}
-
-/* Media query to show hamburger menu only on small screens */
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-  }
-  .nav-toggle-label {
-    display: block;
-  }
 }
