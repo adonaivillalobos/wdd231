@@ -92,6 +92,7 @@ main {
 /* Certificates Section (Below Course and Maracaibo) */
 .certificates {
     margin-top: 20px;
+    margin-bottom: 40px; /* Increased bottom margin to create more space from the footer */
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 8px;
