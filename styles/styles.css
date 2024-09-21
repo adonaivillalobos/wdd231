@@ -98,7 +98,17 @@ nav ul li a:hover {
 
     /* Show the navigation menu when the checkbox is checked */
     #nav-toggle:checked ~ nav ul {
-        display: flex;
+        display: block;
+    }
+
+    /* Add styles for the navigation menu items when the menu is visible */
+    .show li {
+        display: inline-block;
+    }
+
+    /* Add styles for the navigation menu items when the menu is hidden */
+    .hide li {
+        display: none;
     }
 }
 
