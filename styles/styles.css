@@ -202,3 +202,13 @@ footer {
     background-color: #1a4ba1; /* Dark Blue */
     color: #ffffff; /* White */
 }
+
+/* Media query to show hamburger menu only on small screens */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .nav-toggle-label {
+    display: block;
+  }
+}
