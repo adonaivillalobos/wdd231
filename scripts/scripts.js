@@ -1,5 +1,5 @@
 // Get the navigation menu and toggle button elements
-const navMenu = document.querySelector('nav ul');
+const navMenu = document.querySelector('#nav-menu');
 const navToggle = document.querySelector('.nav-toggle-label');
 
 // Add an event listener to the toggle button
@@ -93,3 +93,16 @@ const courses = [
         completed: false
     }
 ];
+
+// Function to display course information
+function displayCourseInfo() {
+  const courseList = document.querySelector('.course-work ul');
+  courses.forEach(course => {
+    const courseItem = document.createElement('li');
+    courseItem.textContent = `${course.subject} ${course.number}: ${course.title}`;
+    courseList.appendChild(courseItem);
+  });
+}
+
+// Call the function to display course information
+displayCourseInfo();
