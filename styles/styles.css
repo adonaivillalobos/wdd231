@@ -47,42 +47,55 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-/* Main */
+/* Main container layout */
 main {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    justify-content: space-between; /* Space between the two sections */
     padding: 20px;
+    gap: 20px; /* Gap between Course Work and Maracaibo sections */
     background-color: #ffffff; /* White */
 }
 
-.course-work, .location, .certificates {
-    background-color: #f0f0f0; /* Light Gray for contrast */
+/* Course Work Section */
+.course-work {
+    flex: 1; /* Takes up available space */
+    background-color: #f0f0f0; /* Light Gray */
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #858585; /* Gray */
-    margin-bottom: 20px;
 }
 
-/* Course Work Section */
 .course-work ul {
     list-style-type: disc;
     margin-left: 20px;
     color: #000000; /* Black */
 }
 
-/* Location Section */
+/* Maracaibo Section */
+.location {
+    flex: 1; /* Takes up available space */
+    background-color: #f0f0f0; /* Light Gray */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #858585; /* Gray */
+}
+
 .location img {
-    width: 50%; /* Adjusted size to 50% of the container */
-    max-width: 400px; /* Maximum width for large screens */
+    width: 100%; /* Makes the image responsive within its container */
+    max-width: 300px; /* Ensures the image doesn't grow too large */
     border-radius: 8px;
     border: 2px solid #858585; /* Gray border */
     display: block;
     margin: 0 auto; /* Centers the image */
 }
 
-/* Certificates Section */
+/* Certificates Section (Below Course and Maracaibo) */
 .certificates {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #858585;
     text-align: center;
 }
 
