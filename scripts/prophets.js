@@ -34,6 +34,7 @@ const displayProphets = (prophets) => {
       <h2>${prophet.name}</h2>
       <p>Birth: ${prophet.birth}</p>
       <p>Death: ${prophet.death}</p>
+      <img src="${prophet.images[0].url}" alt="${prophet.name}">
     `;
 
     // Set the innerHTML of the card to the cardHTML
