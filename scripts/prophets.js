@@ -25,13 +25,21 @@ async function getProphetData() {
 const displayProphets = (prophets) => {
   // Process the parameter value and build a card for each prophet.
   prophets.forEach((prophet) => {
+    // Create a new card each time
     const card = document.createElement('div');
     card.className = 'card';
-    card.innerHTML = `
+
+    // Create the HTML content for each card
+    const cardHTML = `
       <h2>${prophet.name}</h2>
       <p>Birth: ${prophet.birth}</p>
       <p>Death: ${prophet.death}</p>
     `;
+
+    // Set the innerHTML of the card to the cardHTML
+    card.innerHTML = cardHTML;
+
+    // Append the card to the cards element
     cards.appendChild(card);
   });
 };
