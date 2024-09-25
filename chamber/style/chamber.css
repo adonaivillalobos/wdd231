@@ -15,6 +15,7 @@ header {
 }
 h1 {
     color: black;
+    align-self: center;
 }
 
 /* Ensure the hero image covers the full width of the viewport */
