@@ -3,32 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber</title>
-    <meta name="description" content="Chamber of Commerce">
-    <meta name="author" content=" This page will establish the common look and feel that you will design throughout your site.">
+    <title>Chamber of Commerce</title>
+
+    <!-- Meta tags for SEO and Social Media -->
+    <meta name="description" content="Official website of the Chamber of Commerce. Join us today!">
+    <meta name="author" content="Your Full Name">
     <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="">
-    <link rel="stylesheet" href="chamber.css">
+    <meta property="og:image" content="path-to-your-image.jpg">
+    <meta property="og:url" content="http://yourwebsite.com">
+    <meta property="og:description" content="Official website of the Chamber of Commerce. Join us today!">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
-    
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="chamber.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="directory.html" target="_blank">Directory</a></li>
-                <li><a href="join.html" target="_blank">Join</a></li>
-                <li><a href="discover.html" target="_blank">Discover</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
         <div>
-            <img class="hero-img" src=""
+            <img class="hero-img" src="hero-image.jpg" alt="Chamber of Commerce"> <!-- Add your hero image -->
         </div>
     </header>
-    
+
+    <main>
+        <!-- This button allows toggling between grid and list views -->
+        <div>
+            <button id="toggleView">Toggle View</button>
+        </div>
+
+        <!-- Member list will be displayed here -->
+        <div id="member-list" class="grid-view"></div>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>Contact us: 123-456-7890 | email@chamber.com</p>
+        </div>
+        <div class="development-info">
+            <p>&copy; <span id="year"></span> Chamber of Commerce. All rights reserved.</p>
+            <p>Developed by Your Full Name | WDD 231</p>
+            <p>Last modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
