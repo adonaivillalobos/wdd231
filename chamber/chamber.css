@@ -31,7 +31,7 @@ nav ul li a {
 
 .hero-img {
     display: block;
-    width: 50%;  /* Set the width to 50% of its original size */
+    width: 25%;  /* Set the width to 50% of its original size */
     height: auto; /* Maintain the aspect ratio */
     margin: 0 auto; /* Center the image horizontally */
 }
