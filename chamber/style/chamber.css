@@ -13,6 +13,9 @@ header {
     width: 100%;
     margin: 0;
 }
+h1 {
+    color: black;
+}
 
 /* Ensure the hero image covers the full width of the viewport */
 .hero-img {
