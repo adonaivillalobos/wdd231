@@ -10,8 +10,20 @@ header {
     background-color: #004080;
     color: white;
     padding: 10px 0;
+    width: 100%;
+    margin: 0;
 }
 
+/* Ensure the hero image covers the full width of the viewport */
+.hero-img {
+    display: block;
+    width: 100vw;  /* Set to 100% of the viewport width */
+    height: auto;  /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image covers its container */
+    margin: 0;    /* Remove any margins */
+}
+
+/* Navigation */
 nav ul {
     display: flex;
     justify-content: center;
@@ -29,13 +41,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-.hero-img {
-    display: block;
-    width: 100%;  /* Set the width to 50% of its original size */
-    height: auto; /* Maintain the aspect ratio */
-    margin: 0 auto; /* Center the image horizontally */
-}
-
+/* Footer */
 footer {
     background-color: #f1f1f1;
     padding: 20px;
