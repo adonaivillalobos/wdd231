@@ -26,9 +26,26 @@ function displayMembers(members) {
             <p>${member.address}</p>
             <p>${member.phone}</p>
             <a href="${member.website}" target="_blank">Visit Website</a>
+            <p>${member.description}</p>
+            <p>Industry: ${member.industry}</p>
+            <p>Membership Level: ${getMembershipLevel(member.membershipLevel)}</p>
         `;
         memberList.appendChild(memberDiv);
     });
+}
+
+// Function to get the membership level text
+function getMembershipLevel(level) {
+    switch (level) {
+        case 1:
+            return 'Member';
+        case 2:
+            return 'Silver';
+        case 3:
+            return 'Gold';
+        default:
+            return 'Unknown';
+    }
 }
 
 // Toggle between grid view and list view
