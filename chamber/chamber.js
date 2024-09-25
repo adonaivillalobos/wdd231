@@ -40,3 +40,4 @@ document.getElementById('toggleView').addEventListener('click', () => {
 
 // Fetch the members when the page loads
 fetchMembers();
+fetch
