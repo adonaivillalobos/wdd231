@@ -36,10 +36,19 @@ nav ul li {
 
 /* Styling for the member list to make it responsive */
 #member-list {
+    padding: 20px;
+}
+
+#member-list.grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
     gap: 20px;
-    padding: 20px;
+}
+
+#member-list.list-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Member card styling for layout and better spacing */
@@ -70,7 +79,7 @@ nav ul li {
     }
 
     /* Adjust the grid to fit only one column on smaller screens */
-    #member-list {
+    #member-list.grid-view {
         grid-template-columns: 1fr;
     }
 }
