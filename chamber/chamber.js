@@ -22,28 +22,33 @@ async function fetchMembers() {
 
 // Display the members on the page
 function displayMembers(members) {
-    const memberList = document.getElementById('member-list');
-    memberList.innerHTML = ''; // Clear the list
+    try {
+        const memberList = document.getElementById('member-list');
+        memberList.innerHTML = ''; // Clear the list
+        memberList.classList.add('grid-view'); // Add grid-view class
 
-    members.forEach(member => {
-        const memberDiv = document.createElement('div');
-        memberDiv.classList.add('member-card');
+        members.forEach(member => {
+            const memberDiv = document.createElement('div');
+            memberDiv.classList.add('member-card');
 
-        // Add alt attribute fallback for images
-        const altText = member.name || 'Member Image';
+            // Add alt attribute fallback for images
+            const altText = member.name || 'Member Image';
 
-        memberDiv.innerHTML = `
-            <img src="images/${member.image}" alt="${altText}">
-            <h3>${member.name}</h3>
-            <p><strong>Address:</strong> ${member.address}</p>
-            <p><strong>Phone:</strong> ${member.phone}</p>
-            <a href="${member.website}" target="_blank">Visit Website</a>
-            <p>${member.description}</p>
-            <p><strong>Industry:</strong> ${member.industry}</p>
-            <p><strong>Membership Level:</strong> ${getMembershipLevel(member.membershipLevel)}</p>
-        `;
-        memberList.appendChild(memberDiv);
-    });
+            memberDiv.innerHTML = `
+                <img src="images/${member.image}" alt="${altText}">
+                <h3>${member.name}</h3>
+                <p><strong>Address:</strong> ${member.address}</p>
+                <p><strong>Phone:</strong> ${member.phone}</p>
+                <a href="${member.website}" target="_blank">Visit Website</a>
+                <p>${member.description}</p>
+                <p><strong>Industry:</strong> ${member.industry}</p>
+                <p><strong>Membership Level:</strong> ${getMembershipLevel(member.membershipLevel)}</p>
+            `;
+            memberList.appendChild(memberDiv);
+        });
+    } catch (error) {
+        console.error('Failed to display members:', error);
+    }
 }
 
 // Function to get the membership level text

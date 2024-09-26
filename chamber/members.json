@@ -1,5 +1,5 @@
 [
-    {
+  {
       "name": "Maracaibo Oil Corp.",
       "address": "Av. 5 de Julio, Maracaibo, Venezuela",
       "phone": "+58 261 1234",
@@ -8,8 +8,8 @@
       "membershipLevel": 1,
       "description": "Leading oil and gas company in the Maracaibo region",
       "industry": "Energy"
-    },
-    {
+  },
+  {
       "name": "ZuliaTech Inc.",
       "address": "Calle 72, Maracaibo, Venezuela",
       "phone": "+58 261 5678",
@@ -18,8 +18,8 @@
       "membershipLevel": 2,
       "description": "Innovative technology solutions for the Zulia state",
       "industry": "Technology"
-    },
-    {
+  },
+  {
       "name": "Lake Maracaibo Shipping",
       "address": "Puerto de Maracaibo, Maracaibo, Venezuela",
       "phone": "+58 261 9012",
@@ -28,18 +28,18 @@
       "membershipLevel": 3,
       "description": "Expert shipping and logistics services on Lake Maracaibo",
       "industry": "Transportation"
-    },
-    {
+  },
+  {
       "name": "Maracaibo Tourism Board",
       "address": "Av. 5 de Julio, Maracaibo, Venezuela",
       "phone": "+58 261 1111",
       "website": "https://maracaibotourism.com",
-      "image": "maracaibo_tourism_logo.ico",
+      "image": "maracaibo_tourism_logo.png",
       "membershipLevel": 1,
       "description": "Promoting tourism and cultural heritage in Maracaibo",
       "industry": "Tourism"
-    },
-    {
+  },
+  {
       "name": "Universidad del Zulia",
       "address": "Calle 67, Maracaibo, Venezuela",
       "phone": "+58 261 2222",
@@ -48,8 +48,8 @@
       "membershipLevel": 2,
       "description": "Leading university in the Zulia state, offering various academic programs",
       "industry": "Education"
-    },
-    {
+  },
+  {
       "name": "Maracaibo Health Services",
       "address": "Av. 5 de Julio, Maracaibo, Venezuela",
       "phone": "+58 261 3333",
@@ -58,8 +58,8 @@
       "membershipLevel": 1,
       "description": "Comprehensive healthcare services for the Maracaibo community",
       "industry": "Healthcare"
-    },
-    {
+  },
+  {
       "name": "La Chinita International Fair",
       "address": "Calle 72, Maracaibo, Venezuela",
       "phone": "+58 261 4444",
@@ -68,5 +68,5 @@
       "membershipLevel": 2,
       "description": "Annual international fair showcasing local products and culture",
       "industry": "Events"
-    }
-  ]
+  }
+]
