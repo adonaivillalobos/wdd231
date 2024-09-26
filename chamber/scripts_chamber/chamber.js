@@ -4,11 +4,18 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // Set the last modified date dynamically in the footer
 document.getElementById('lastModified').textContent = document.lastModified;
 
-// Fetch members from the JSON file
+// Fetch members from the JSON file asynchronously
 async function fetchMembers() {
-    const response = await fetch('data/members.json');
-    const members = await response.json();
-    displayMembers(members);
+    try {
+        const response = await fetch('data/members.json'); // Ensure the correct path to your JSON file
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const members = await response.json();
+        displayMembers(members);
+    } catch (error) {
+        console.error('Failed to fetch members:', error);
+    }
 }
 
 // Display the members on the page
@@ -56,4 +63,4 @@ document.getElementById('toggleView').addEventListener('click', () => {
 });
 
 // Fetch the members when the page loads
-fetchMembers();
+document.addEventListener('DOMContentLoaded', fetchMembers);
