@@ -16,7 +16,7 @@ async function fetchMembers() {
     } catch (error) {
         console.error('Failed to fetch members:', error);
         // Display an error message to the user
-        document.getElementById('member-list').innerHTML = '<p>Failed to load members. Please try again later.</p>';
+        document.getElementById('member-list').innerHTML = '<p class="error">Failed to load members. Please try again later.</p>';
     }
 }
 
@@ -29,15 +29,18 @@ function displayMembers(members) {
         const memberDiv = document.createElement('div');
         memberDiv.classList.add('member-card');
 
+        // Add alt attribute fallback for images
+        const altText = member.name || 'Member Image';
+
         memberDiv.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name}">
+            <img src="images/${member.image}" alt="${altText}">
             <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
+            <p><strong>Address:</strong> ${member.address}</p>
+            <p><strong>Phone:</strong> ${member.phone}</p>
             <a href="${member.website}" target="_blank">Visit Website</a>
             <p>${member.description}</p>
-            <p>Industry: ${member.industry}</p>
-            <p>Membership Level: ${getMembershipLevel(member.membershipLevel)}</p>
+            <p><strong>Industry:</strong> ${member.industry}</p>
+            <p><strong>Membership Level:</strong> ${getMembershipLevel(member.membershipLevel)}</p>
         `;
         memberList.appendChild(memberDiv);
     });
