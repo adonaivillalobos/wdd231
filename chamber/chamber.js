@@ -15,6 +15,8 @@ async function fetchMembers() {
         displayMembers(members);
     } catch (error) {
         console.error('Failed to fetch members:', error);
+        // Display an error message to the user
+        document.getElementById('member-list').innerHTML = '<p>Failed to load members. Please try again later.</p>';
     }
 }
 
@@ -60,6 +62,11 @@ document.getElementById('toggleView').addEventListener('click', () => {
     const memberList = document.getElementById('member-list');
     memberList.classList.toggle('grid-view');
     memberList.classList.toggle('list-view');
+    
+    // Toggle button text for better user experience
+    document.getElementById('toggleView').textContent = memberList.classList.contains('grid-view') 
+        ? 'Switch to List View' 
+        : 'Switch to Grid View';
 });
 
 // Fetch the members when the page loads
