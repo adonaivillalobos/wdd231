@@ -180,7 +180,66 @@ nav ul li {
   .weather-link:hover {
     color: #0056b3;
   }
-      
+  .spotlights-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .spotlights-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .spotlight {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+  }
+  
+  .company-logo {
+    max-width: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .spotlight h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007BFF;
+  }
+  
+  .spotlight p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .spotlight-link {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .spotlight-link:hover {
+    color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .spotlight {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+        
 
 /* Responsive views for smaller devices */
 @media (max-width: 768px) {
