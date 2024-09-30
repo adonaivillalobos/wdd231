@@ -91,7 +91,51 @@ nav ul li {
   .cta-button:hover {
     background-color: #0056b3; /* darker blue on hover */
   }
+  .events-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 30px;
+  }
   
+  .events-section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .event {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .event h3 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-bottom: 10px;
+  }
+  
+  .event p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .event-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .event-link:hover {
+    color: #0056b3;
+  }
+    
 
 /* Responsive views for smaller devices */
 @media (max-width: 768px) {
