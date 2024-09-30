@@ -25,7 +25,6 @@ function displayMembers(members) {
     try {
         const memberList = document.getElementById('member-list');
         memberList.innerHTML = ''; // Clear the list
-        memberList.classList.add('grid-view'); // Add grid-view class
 
         members.forEach(member => {
             const memberDiv = document.createElement('div');
