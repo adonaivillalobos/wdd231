@@ -71,6 +71,27 @@ nav ul li {
     height: auto;
     margin-bottom: 10px;
 }
+.cta-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* light background to stand out */
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007BFF; /* blue button */
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3; /* darker blue on hover */
+  }
+  
 
 /* Responsive views for smaller devices */
 @media (max-width: 768px) {
