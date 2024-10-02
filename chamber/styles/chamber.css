@@ -27,7 +27,7 @@ h1, h2 {
 /* Navigation styling for better responsive look */
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     flex-wrap: wrap; /* Ensure items wrap on smaller screens */
     list-style: none;
     padding: 0;
