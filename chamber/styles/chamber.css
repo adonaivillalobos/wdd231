@@ -100,7 +100,7 @@ nav ul li a {
   .cta-button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: lightgreen; /* blue button */
+    background-color: #000793; /* blue button */
     color: white;
     font-size: 1.2em;
     text-decoration: none;
