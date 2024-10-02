@@ -74,6 +74,7 @@ nav ul li {
     height: auto;
     margin-bottom: 10px;
 }
+
 /* Home Page */
 .cta-section {
     text-align: center;
@@ -84,7 +85,7 @@ nav ul li {
   .cta-button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #858585; /* blue button */
+    background-color: lightgreen; /* blue button */
     color: white;
     font-size: 1.2em;
     text-decoration: none;
