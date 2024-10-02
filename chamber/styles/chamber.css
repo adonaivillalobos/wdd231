@@ -26,10 +26,16 @@ h2 {
 
 /* Make sure the hero image is responsive */
 .hero-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+  cursor: pointer; /* added cursor style */
+}
+
+.hero-img:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out; /* added hover effect */
 }
 
 /* Navigation styling for better responsive look */
