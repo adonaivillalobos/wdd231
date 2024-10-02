@@ -14,9 +14,6 @@ header {
 }
 h1, h2 {
   text-align: left;
-}
-
-h1 {
   margin-bottom: 5px;
 }
 
@@ -32,13 +29,13 @@ h1 {
 nav ul {
   display: flex;
   justify-content: flex-end;
-  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
 }
 
 nav ul li {
-  margin: 10px 15px; /* Added top-bottom margin for better spacing on smaller screens */
+  margin: 10px 15px;
 }
 
 /* Styling for the member list to make it responsive */
