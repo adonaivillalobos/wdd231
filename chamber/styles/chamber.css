@@ -12,8 +12,8 @@ header {
     padding: 20px;
     width: 100%;
 }
-h1 {
-  text-align: center;
+h1, h2 {
+  text-align: left;
 }
 
 /* Make sure the hero image is responsive */
