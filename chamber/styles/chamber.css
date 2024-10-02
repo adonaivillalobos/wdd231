@@ -147,7 +147,7 @@ nav ul li a {
   .event-link {
     display: inline-block;
     margin-top: 10px;
-    color: #007BFF;
+    color: #000793;
     text-decoration: none;
     font-weight: bold;
   }
@@ -209,7 +209,7 @@ nav ul li a {
   
   .spotlights-section h2 {
     font-size: 2em;
-    color: #333;
+    color: #000793;
     margin-bottom: 20px;
   }
   
@@ -234,7 +234,7 @@ nav ul li a {
   .spotlight h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #007BFF;
+    color: #000793;
   }
   
   .spotlight p {
@@ -244,7 +244,7 @@ nav ul li a {
   }
   
   .spotlight-link {
-    color: #007BFF;
+    color: #000793;
     font-weight: bold;
     text-decoration: none;
   }
