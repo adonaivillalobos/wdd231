@@ -35,10 +35,11 @@ h2 {
 /* Navigation styling for better responsive look */
 nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  margin-top: 50px; /* Add some space between nav and h1/h2 */
 }
 
 nav ul li {
