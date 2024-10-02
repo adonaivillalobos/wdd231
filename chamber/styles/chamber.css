@@ -31,10 +31,10 @@ h1 {
 /* Navigation styling for better responsive look */
 nav ul {
   display: flex;
-  justify-content: left;
+  justify-content: flex-end;
   flex-wrap: wrap; /* Ensure items wrap on smaller screens */
   list-style: none;
-  padding: 0 0 0 40px; /* Added 40px left padding */
+  padding: 0;
 }
 
 nav ul li {
