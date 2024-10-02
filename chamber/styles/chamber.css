@@ -13,7 +13,7 @@ header {
     width: 100%;
 }
 h1, h2 {
-  text-align: left;
+  text-align: center;
 }
 
 h1 {
@@ -85,7 +85,7 @@ nav ul li {
 }
 
 /* Home Page */
-.cta-section {
+.cta-section, h2 {
     text-align: center;
     padding: 20px;
     background-color: #f4f4f4; /* light background to stand out */
