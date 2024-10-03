@@ -1,7 +1,7 @@
 // API Key and URL
 const apiKey = 'e0c98612e2fecdd1a630556fa3337484';
 const city = 'Maracaibo';
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}`;
 
 // Fetch current weather data
 fetch(apiUrl)
