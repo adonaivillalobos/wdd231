@@ -269,6 +269,8 @@ a {
 
   /* General Form Styling */
 form {
+  width: 100%;
+  max-width: 600px;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -282,27 +284,41 @@ input, textarea, select {
   margin-bottom: 20px;
 }
 
-/* Membership Cards */
-.membership-cards {
+.membership-form-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  align-items: flex-start;
+}
+
+.membership-cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .card {
   padding: 20px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  text-align: center;
+  background-color: #f0f0f0;
   transition: transform 0.3s ease, opacity 1s ease;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .card:hover {
   transform: scale(1.05);
-}
-
-.card a {
-  color: blue;
-  text-decoration: underline;
 }
 
 /* Modal Styling */
@@ -313,8 +329,7 @@ input, textarea, select {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
 }
@@ -330,6 +345,36 @@ input, textarea, select {
   cursor: pointer;
 }
 
+/* Two-column layout on larger screens */
+@media (min-width: 768px) {
+  .membership-form-wrapper {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  form {
+      width: 50%;
+  }
+
+  .membership-cards {
+      width: 40%;
+  }
+
+  .card {
+      margin-bottom: 20px;
+  }
+}
+
+/* Single column layout on smaller screens */
+@media (max-width: 767px) {
+  .membership-form-wrapper {
+      flex-direction: column;
+  }
+
+  form, .membership-cards {
+      width: 100%;
+  }
+}
   
   @media (max-width: 768px) {
     .spotlight {

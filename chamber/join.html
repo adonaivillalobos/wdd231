@@ -35,136 +35,138 @@
         </nav>
     </header>
     <main>
-        <!-- Membership Form -->
-    <form action="thankyou.html" method="GET">
-        <label for="first-name">First Name:
-            <input type="text" id="first-name" name="firstName" title="Enter your first name" autocomplete="given-name" required>
-        </label><br>
-
-        <label for="last-name">Last Name:
-            <input type="text" id="last-name" name="lastName" title="Enter your last name" autocomplete="family-name" required>
-        </label><br>
-
-        <label for="title">Organizational Title:
-            <input type="text" id="title" name="orgTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[a-zA-Z\s\-]{7,}" required>
-        </label><br>
-
-        <label for="email">Email:
-            <input type="email" id="email" name="email" title="Enter your email" autocomplete="email" placeholder="example@example.com" required>
-        </label><br>
-
-        <label for="phone">Mobile Phone:
-            <input type="tel" id="phone" name="mobile" title="Enter your mobile number" autocomplete="tel" required>
-        </label><br>
-
-        <label for="organization">Business/Organization Name:
-            <input type="text" id="organization" name="organization" title="Enter your organization's name" autocomplete="organization" required>
-        </label><br>
-
-        <!-- Membership Level Selection -->
-        <label for="membership-level">Membership Level:
-            <select id="membership-level" name="membership" title="Select membership level" required>
-                <option value="NP Membership">NP Membership (No Fee)</option>
-                <option value="Bronze Membership">Bronze Membership</option>
-                <option value="Silver Membership">Silver Membership</option>
-                <option value="Gold Membership">Gold Membership</option>
-            </select>
-        </label><br>
-
-        <label for="description">Business Description:
-            <textarea id="description" name="businessDescription" title="Enter a description of your business"></textarea>
-        </label><br>
-
-        <!-- Timestamp -->
-        <input type="hidden" id="timestamp" name="timestamp" value="">
-        
-        <!-- Submit Button -->
-        <input type="submit" value="Submit Membership Application">
-    </form>
-
-    <!-- Membership Cards with Modals -->
-    <div class="membership-cards">
-        <div class="card">
-            <h3>NP Membership</h3>
-            <a href="#npModal">Learn more</a>
+        <div class="membership-form-wrapper">
+            <!-- Membership Form -->
+            <form action="thankyou.html" method="GET">
+                <label for="first-name">First Name:
+                    <input type="text" id="first-name" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+                </label><br>
+    
+                <label for="last-name">Last Name:
+                    <input type="text" id="last-name" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+                </label><br>
+    
+                <label for="title">Organizational Title:
+                    <input type="text" id="title" name="orgTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[a-zA-Z\s\-]{7,}" required>
+                </label><br>
+    
+                <label for="email">Email:
+                    <input type="email" id="email" name="email" title="Enter your email" autocomplete="email" placeholder="example@example.com" required>
+                </label><br>
+    
+                <label for="phone">Mobile Phone:
+                    <input type="tel" id="phone" name="mobile" title="Enter your mobile number" autocomplete="tel" required>
+                </label><br>
+    
+                <label for="organization">Business/Organization Name:
+                    <input type="text" id="organization" name="organization" title="Enter your organization's name" autocomplete="organization" required>
+                </label><br>
+    
+                <!-- Membership Level Selection -->
+                <label for="membership-level">Membership Level:
+                    <select id="membership-level" name="membership" title="Select membership level" required>
+                        <option value="NP Membership">NP Membership (No Fee)</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                    </select>
+                </label><br>
+    
+                <label for="description">Business Description:
+                    <textarea id="description" name="businessDescription" title="Enter a description of your business"></textarea>
+                </label><br>
+    
+                <!-- Timestamp -->
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                
+                <!-- Submit Button -->
+                <input type="submit" value="Submit Membership Application">
+            </form>
+    
+            <!-- Membership Cards with Modals -->
+            <div class="membership-cards">
+                <div class="card">
+                    <h3>Non Profit Membership Level</h3>
+                    <a href="#npModal">Learn More</a>
+                </div>
+                <div class="card">
+                    <h3>Bronze Membership Level</h3>
+                    <a href="#bronzeModal">Learn More</a>
+                </div>
+                <div class="card">
+                    <h3>Silver Membership Level</h3>
+                    <a href="#silverModal">Learn More</a>
+                </div>
+                <div class="card">
+                    <h3>Gold Membership Level</h3>
+                    <a href="#goldModal">Learn More</a>
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <h3>Bronze Membership</h3>
-            <a href="#bronzeModal">Learn more</a>
+    
+        <!-- Modals for Membership Benefits -->
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>NP Membership Benefits</h2>
+                <p>No fee for non-profit organizations. Includes event discounts and networking opportunities.</p>
+            </div>
         </div>
-        <div class="card">
-            <h3>Silver Membership</h3>
-            <a href="#silverModal">Learn more</a>
+    
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <p>Includes basic business advertising and event discounts.</p>
+            </div>
         </div>
-        <div class="card">
-            <h3>Gold Membership</h3>
-            <a href="#goldModal">Learn more</a>
+    
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <p>Includes advertising on the home page and access to special events.</p>
+            </div>
         </div>
-    </div>
-
-    <!-- Modals for Membership Benefits -->
-    <div id="npModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>NP Membership Benefits</h2>
-            <p>No fee for non-profit organizations. Includes event discounts and networking opportunities.</p>
+    
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <p>Includes premium advertising, exclusive training, and top-tier event access.</p>
+            </div>
         </div>
-    </div>
-
-    <div id="bronzeModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Bronze Membership Benefits</h2>
-            <p>Includes basic business advertising and event discounts.</p>
-        </div>
-    </div>
-
-    <div id="silverModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Silver Membership Benefits</h2>
-            <p>Includes advertising on the home page and access to special events.</p>
-        </div>
-    </div>
-
-    <div id="goldModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Gold Membership Benefits</h2>
-            <p>Includes premium advertising, exclusive training, and top-tier event access.</p>
-        </div>
-    </div>
-
-    <script>
-        // Set timestamp when form is loaded
-        document.getElementById('timestamp').value = new Date().toISOString();
-
-        // Modal functionality
-        const modals = document.querySelectorAll('.modal');
-        const links = document.querySelectorAll('.card a');
-        const closeButtons = document.querySelectorAll('.modal .close');
-
-        links.forEach((link, index) => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                modals[index].style.display = 'block';
+    
+        <script>
+            // Set timestamp when form is loaded
+            document.getElementById('timestamp').value = new Date().toISOString();
+    
+            // Modal functionality
+            const modals = document.querySelectorAll('.modal');
+            const links = document.querySelectorAll('.card a');
+            const closeButtons = document.querySelectorAll('.modal .close');
+    
+            links.forEach((link, index) => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    modals[index].style.display = 'block';
+                });
             });
-        });
-
-        closeButtons.forEach((btn, index) => {
-            btn.addEventListener('click', () => {
-                modals[index].style.display = 'none';
+    
+            closeButtons.forEach((btn, index) => {
+                btn.addEventListener('click', () => {
+                    modals[index].style.display = 'none';
+                });
             });
-        });
-
-        window.onclick = (event) => {
-            modals.forEach(modal => {
-                if (event.target == modal) {
-                    modal.style.display = 'none';
-                }
-            });
-        };
-    </script>
+    
+            window.onclick = (event) => {
+                modals.forEach(modal => {
+                    if (event.target == modal) {
+                        modal.style.display = 'none';
+                    }
+                });
+            };
+        </script>
     </main>
     <footer>
         <div class="contact-info">
