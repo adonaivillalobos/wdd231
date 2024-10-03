@@ -1,28 +1,44 @@
-const apiKey = 'yhttps://pro.openweathermap.org/data/2.5/forecast/hourly?lat={lat}&lon={lon}&appid={API key}';
+// API Key and URL
+const apiKey = 'e0c98612e2fecdd1a630556fa3337484';
 const city = 'Maracaibo';
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
+// Fetch current weather data
 fetch(apiUrl)
   .then(response => response.json())
   .then(data => {
-    document.querySelector('.weather-city').textContent = data.name;
-    document.querySelector('.weather-temp').textContent = `${data.main.temp}°C`;
-    document.querySelector('.weather-condition').textContent = data.weather[0].description;
+    console.log('Received weather data:', data); // Add a debug statement to inspect the data object
+    if (data && data.main && data.main.temp) {
+      document.querySelector('.weather-city').textContent = data.name;
+      document.querySelector('.weather-temp').textContent = `${data.main.temp}°C`;
+      document.querySelector('.weather-condition').textContent = data.weather[0].description;
 
-    // Fetch 4-day forecast
-    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
-    fetch(forecastUrl)
-      .then(response => response.json())
-      .then(forecastData => {
-        const forecastList = document.querySelector('.weather-forecast');
-        forecastList.innerHTML = '';
-        for (let i = 0; i < 8; i += 2) {
-          const forecastItem = document.createElement('li');
-          forecastItem.textContent = `Day ${Math.floor(i / 2) + 1}: ${forecastData.list[i].main.temp}°C`;
-          forecastList.appendChild(forecastItem);
-        }
-      })
-      .catch(error => console.error('Error fetching forecast data:', error));
+      // Fetch 4-day forecast
+      const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+      fetch(forecastUrl)
+        .then(response => response.json())
+        .then(forecastData => {
+          console.log('Received forecast data:', forecastData); // Add a debug statement to inspect the forecast data object
+          if (forecastData && forecastData.list) {
+            const forecastList = document.querySelector('.weather-forecast');
+            forecastList.innerHTML = '';
+            for (let i = 0; i < 8; i += 2) {
+              if (forecastData.list[i] && forecastData.list[i].main && forecastData.list[i].main.temp) {
+                const forecastItem = document.createElement('li');
+                forecastItem.textContent = `Day ${Math.floor(i / 2) + 1}: ${forecastData.list[i].main.temp}°C`;
+                forecastList.appendChild(forecastItem);
+              } else {
+                console.error('Invalid forecast data:', forecastData);
+              }
+            }
+          } else {
+            console.error('Invalid forecast data:', forecastData);
+          }
+        })
+        .catch(error => console.error('Error fetching forecast data:', error));
+    } else {
+      console.error('Invalid weather data:', data);
+    }
   })
   .catch(error => console.error('Error fetching weather data:', error));
 
@@ -80,7 +96,7 @@ const members = [
   },
   {
     "name": "Maracaibo Health Services",
-    "address": "Av. 5 de Julio, Maracaibo, Venezuela",
+    "address": "Av. 5 de Julio, Maraca ibo, Venezuela",
     "phone": "+58 261 3333",
     "website": "https://maracaibohealth.com",
     "image": "maracaibo_health_logo.jpg",
