@@ -365,6 +365,59 @@ input, textarea, select {
   }
 }
 
+.thank-you-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4; /* light background to stand out */
+}
+
+.thank-you-message h2 {
+  margin-bottom: 10px;
+}
+
+.thank-you-message p {
+  margin-bottom: 20px;
+}
+
+.thank-you-message ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.thank-you-message li {
+  margin-bottom: 10px;
+}
+
+.thank-you-message a {
+  text-decoration: none;
+  color: #000793;
+}
+
+.thank-you-message a:hover {
+  color: #0056b3;
+}
+
+.cta-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cta-buttons .btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #000793; /* blue button */
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+  background-color: #0056b3; /* darker blue on hover */
+}
+
 /* Single column layout on smaller screens */
 @media (max-width: 767px) {
   .membership-form-wrapper {
