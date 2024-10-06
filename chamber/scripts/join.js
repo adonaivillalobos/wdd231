@@ -41,5 +41,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // No form submission override needed, the form will submit normally now
+    // Let the form submit naturally (removed the submit button override)
 });
