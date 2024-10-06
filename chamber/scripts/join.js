@@ -41,34 +41,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Form submission handling
-    const form = document.getElementById('myForm');
-    const submitBtn = document.getElementById('submitBtn');
-
-    // Add an event listener to the submit button
-    submitBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        // Get the form data
-        const formData = new FormData(form);
-
-        // Send the form data to the server using fetch
-        fetch('/submit', {
-            method: 'POST',
-            body: formData
-        })
-        .then((response) => response.json())
-        .then((data) => {
-            // If the submission is successful, redirect to the thank you page
-            if (data.success) {
-                window.location.href = '/thank-you';
-            } else {
-                // If the submission fails, display an error message
-                console.error('Error submitting form:', data.error);
-            }
-        })
-        .catch((error) => {
-            console.error('Error submitting form:', error);
-        });
-    });
+    // No form submission override needed, the form will submit normally now
 });
