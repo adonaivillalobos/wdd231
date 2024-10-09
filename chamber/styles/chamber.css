@@ -320,19 +320,15 @@ input, textarea, select {
 .card:hover {
   transform: scale(1.05);
 }
-@keyframes tilt {
-  0% {
-    transform: rotate(0deg);
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
   50% {
-    transform: rotate(2deg); /* Slight clockwise tilt */
-  }
-  100% {
-    transform: rotate(0deg);
+    transform: translateY(-15px); /* Move upwards */
   }
 }
 
-/* Add the tilt animation to the .card class */
 .card {
   padding: 20px;
   margin-bottom: 10px;
@@ -341,21 +337,7 @@ input, textarea, select {
   text-align: center;
   background-color: #f0f0f0;
   transition: transform 0.3s ease, opacity 1s ease;
-  animation: tilt 5s ease-in-out infinite; /* Tilt animation */
-}
-
-.card a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  color: white;
-  background-color: #007bff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.card:hover {
-  transform: scale(1.05);
+  animation: bounce 2s infinite; /* Bounce animation */
 }
 
 /* Modal Styling */
