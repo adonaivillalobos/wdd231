@@ -16,7 +16,65 @@
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="chamber.css">
+
+    <!-- Include CSS for Layout -->
+    <style>
+        /* CSS Grid for sidebar and main content */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+        }
+
+        .sidebar {
+            background-color: #f0f0f0;
+            padding: 15px;
+        }
+
+        .main-content {
+            background-color: #fff;
+            padding: 15px;
+        }
+
+        /* Reusable classes */
+        .spacing {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Image hover effect */
+        .main-content img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .main-content img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive: single-column on mobile */
+        @media (max-width: 768px) {
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+            .main-content img:hover {
+                transform: none;
+            }
+        }
+    </style>
+
+</head>
 <body>
+
+    <!-- Header Section -->
     <header>
         <h1>Maracaibo</h1>  
         <h2>Chamber of Commerce</h2>
@@ -29,6 +87,37 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Sidebar and Main Content Layout -->
+    <div class="grid-layout">
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Visitor Information</h3>
+            <div id="visitor-message"></div>
+
+            <h3>Upcoming Events</h3>
+            <p>Business Expo: October 20</p>
+            <p>Networking Event: November 15</p>
+
+            <h3>Statistics</h3>
+            <p>Number of members: 500+</p>
+            <p>New businesses this month: 30</p>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h3>Explore Maracaibo</h3>
+            <img src="images/maracaibo1.jpg" alt="Image 1" loading="lazy">
+            <img src="images/maracaibo2.jpg" alt="Image 2" loading="lazy">
+            <img src="images/maracaibo3.jpg" alt="Image 3" loading="lazy">
+            <img src="images/maracaibo4.jpg" alt="Image 4" loading="lazy">
+            <img src="images/maracaibo5.jpg" alt="Image 5" loading="lazy">
+            <img src="images/maracaibo6.jpg" alt="Image 6" loading="lazy">
+        </main>
+    </div>
+
+    <!-- Footer Section -->
     <footer>
         <div class="contact-info">
             <p>Contact us: +58-123-456-7890 | email@maracaibochamber.com</p>
@@ -38,6 +127,36 @@
             <p>Developed by Adonai Villalobos Riveiro | WDD 231</p>
             <p>Last modified: <span id="lastModified"></span></p>
         </div>
-    </footer> 
+    </footer>
+
+    <!-- JavaScript for Last Visit Date -->
+    <script>
+        // LocalStorage: Track last visit and display message
+        const lastVisit = localStorage.getItem('lastVisit');
+        const now = Date.now();
+        let message = '';
+
+        if (!lastVisit) {
+            message = "Welcome! Let us know if you have any questions.";
+        } else {
+            const daysSinceLastVisit = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
+
+            if (daysSinceLastVisit < 1) {
+                message = "Back so soon! Awesome!";
+            } else if (daysSinceLastVisit === 1) {
+                message = "You last visited 1 day ago.";
+            } else {
+                message = `You last visited ${daysSinceLastVisit} days ago.`;
+            }
+        }
+
+        localStorage.setItem('lastVisit', now);
+        document.getElementById('visitor-message').textContent = message;
+
+        // Set current year and last modified date
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+
 </body>
 </html>
