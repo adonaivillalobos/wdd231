@@ -34,7 +34,7 @@
   }
   /* Adjust the size of the logo on the site plan page */
 .site-plan-logo {
-  width: 150px;  /* Adjust this value to your desired size */
+  width: 700px;  /* Adjust this value to your desired size */
   height: auto;  /* Maintain aspect ratio */
 }
 
