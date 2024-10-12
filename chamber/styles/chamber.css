@@ -376,6 +376,16 @@ input, textarea, select {
 .main-content img:hover {
   transform: scale(1.05);
 }
+.main-content img {
+  width: 300px; /* Set the same width for all images */
+  height: 200px; /* Set the same height for all images */
+  object-fit: cover; /* Ensures the image fits the container without distortion */
+  margin-bottom: 15px; /* Adds space between images */
+  display: block; /* Ensure the images are block-level elements */
+  margin-left: auto; /* Center the images */
+  margin-right: auto; /* Center the images */
+}
+
 
 /* Responsive: single-column on mobile */
 @media (max-width: 768px) {
