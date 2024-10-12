@@ -1,0 +1,307 @@
+/* Resetting default margin and padding */
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-family: Merienda, cursive;
+}
+body {
+    background-color: whitesmoke;
+    margin-bottom: 60px; /* Ensure enough space for the navbar */
+}
+/* Ensuring the header takes full width */
+header {
+    width: 100%;
+    background-color: lightgrey;
+    text-align: center;
+    padding: 0 auto;
+}
+/* Styling the logo */
+.logo img {
+    width: 100%; 
+    height: auto;
+}
+/* Styling the navigation */
+nav ul {
+    list-style: none;
+    margin-top: 5px;
+}
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+    line-height: 40px; /* Reduced line height */
+    padding: 5px 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.spacer {
+    height: 50px;
+}
+/* Styling the audience section */
+.audience-section {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.audience-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.audience-image {
+    text-align: left;
+    box-sizing: border-box;
+    padding-right: 80px;
+}
+.audience-image img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+.audience-text {
+    box-sizing: border-box;
+    font-family: Noto Sans;
+    font-size: medium;
+}
+.audience-title {
+    text-align: center;
+}
+/* Creating space after the audience section */
+.spacer {
+    height: 50px;
+}
+.vision-section {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.vision-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.vision-image {
+    text-align: left;
+    box-sizing: border-box;
+    padding-right: 80px;
+}
+.vision-image img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+.vision-text {
+    box-sizing: border-box;
+    font-family: Noto Sans;
+    font-size: medium;
+}
+.vision-title {
+    text-align: center;
+}
+p {
+    font-family: Noto Sans;
+}
+.audience-text,
+.vision-text {
+    font-size: 18px;
+    line-height: 1.5;
+    justify-content: left;
+}
+.title-frame {
+    background-color: #4e87eb;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.audience-title,
+.vision-title {
+    margin: 0;
+}
+.spacer {
+    height: 50px;
+}
+/* CSS for the course section */
+.courses-section {
+    text-align: center;
+    margin: 20px auto 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.courses-section h2 {
+    margin-top: 0;
+}
+.courses-section .course {
+    margin-bottom: 40px;
+}
+.courses-section h3 {
+    margin-bottom:  10px;
+}
+.courses-section p {
+    text-align: justify;
+}
+.courses-section ul {
+    text-align: left;
+}
+
+/* Hover efffect for course images */
+.courses-section .course-image:hover img {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+/* Footer */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: black;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
+}
+footer {
+    background-color: #4e87eb;
+    color: white;
+    padding: 25px 50px; /* Corrected spacing issue */
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* About Me page CSS */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin-right: 20px;
+}
+.introduction {
+    display: flex;
+    flex-direction: column;
+}
+/*Styles for introduction title and text */
+.introduction .about-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.introduction .about-section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.introduction .about-section p {
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    font-family: Noto Sans;
+}
+.interest-section ul {
+    text-align: left;
+    font-size: 18px;
+    font-family: Noto Sans;
+    line-height: 2;
+    margin-top: 35px;
+}
+/*Retain the existing styles for other elements */
+.title {
+    color: grey;
+    font-size: 18px;
+}
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+button:hover,
+a:hover {
+    opacity: 0.7;
+}
+/* Course page CSS start now */
+.course-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.course h2 {
+    margin-bottom: 20px;
+}
+.course h3 {
+    text-align: center;
+    background-color: #4e87eb;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: calc(100% - 40px);
+    margin-left: -20px;
+}
+.course p {
+    text-align: left;
+    margin-left: 30px;
+    line-height: 1.5;
+    font-family: Noto Sans;
+    font-size: medium;
+}
+.course ul {
+    text-align: left;
+    margin-left: 30px;
+}
+/*Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    background-color: #4e87eb;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 0.5px;
+}
+/*Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 14px; /* Adjusted padding */
+    text-decoration: none;
+    font-size: 16px;    /* Adjusted font size */
+}
+/* Change the color of the links on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: #4e87eb;
+    color: white;
+}
