@@ -127,6 +127,48 @@ p {
 .spacer {
     height: 50px;
 }
+/* Styling for the Scenarios section */
+.scenarios-section {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.scenarios-section h3 {
+    text-align: center;
+    background-color: #4e87eb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: Merienda, cursive;
+}
+
+.scenarios-section p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.scenarios-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.scenarios-section li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.scenarios-section li strong {
+    color: #4e87eb;
+    font-weight: bold;
+}
+
 /* CSS for the course section */
 .courses-section {
     text-align: center;
