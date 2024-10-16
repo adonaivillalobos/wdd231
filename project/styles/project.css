@@ -347,3 +347,11 @@ a:hover {
     background-color: #4e87eb;
     color: white;
 }
+.hover-opacity {
+    opacity: 0.8;
+  }
+  
+  .underline {
+    text-decoration: underline;
+  }
+  
