@@ -1,4 +1,4 @@
-// main.js
+// project.js
 
 // Function 1: Handle LocalStorage and Display Last Visit Message
 function handleLastVisit() {
