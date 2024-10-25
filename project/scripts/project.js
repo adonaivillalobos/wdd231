@@ -24,7 +24,7 @@ function handleLastVisit() {
 // Function 2: Fetch JSON Data and Build Items Dynamically
 async function fetchCourses() {
     try {
-        const response = await fetch('https://api.example.com/courses'); // Replace with your API
+        const response = await fetch('https://api.example.com/courses');
         const courses = await response.json();
 
         const coursesContainer = document.querySelector('.courses-container');
